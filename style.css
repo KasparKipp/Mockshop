@@ -1,6 +1,8 @@
 :root {
   
   font-family: 'Open Sans';
+
+  --ff-logo: 'Comic sans';
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -258,6 +260,7 @@ main {
   margin: 0;
 }
 
+/*Esimese põhikonteineri osa lõpp*/
 /*Teise põhikonteineri osa kus on toodete kastid*/
 
 #ese1 {
@@ -272,3 +275,5 @@ main {
 #ese4 {
   background-image: url(https://picsum.photos/800/400);
 }
+
+/*Teise põhikonteineri lõpp*/
