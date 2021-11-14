@@ -183,13 +183,6 @@ main {
   {
     left: 0px;
   }
-
-  /*Siin esimese konteineri väikse ekraani kood*/
-  .pilditekst {
-    font-size: calc(20rem + 9vw);
-  }
-
-  /*Siin lõppeb esimese konteineri väikese ekraanikood*/
 }
 
 .dark {
