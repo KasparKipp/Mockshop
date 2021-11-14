@@ -9,6 +9,7 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
   font-size: 16px;
+  --fw-title: bold;
 }
 
 body {
@@ -225,8 +226,9 @@ main {
 /*Esimese põhikonteineri osa*/
 .esimene-konteiner {
   display: flex;
-  align-content: center;
   justify-content: center;
+  align-items: center;
+  
   min-height: 100vh;
 
 
@@ -234,27 +236,20 @@ main {
 
 }
 
-#suurlinn {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-	
-  /* Tahame, et kataks igal ajal kogu ekraani */
-  min-width: 100%;
-  min-height: 100%;
-}
+
 
 .pilditekst {
-  background-image: url(https://picsum.photos/id/865/300/100);
+  background-image: url(https://unsplash.it/800);
   background-size: cover;
   background-clip: text;
-  /*color: transparent;*/
+  -webkit-background-clip: text;
+  color: transparent;
   
   /* Üldine stiliseering */
   font-family: sans-serif;
   font-weight: var(--fw-title);
   text-transform: uppercase;
-  font-size: calc(3rem + 7vw);
+  font-size: calc(3rem + 18vw);
   line-height: .8;
   text-align: center;
   margin: 0;
