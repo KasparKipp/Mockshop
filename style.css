@@ -183,6 +183,13 @@ main {
   {
     left: 0px;
   }
+
+  /*Siin esimese konteineri väikse ekraani kood*/
+  .pilditekst {
+    font-size: calc(20rem + 9vw);
+  }
+
+  /*Siin lõppeb esimese konteineri väikese ekraanikood*/
 }
 
 .dark {
@@ -249,7 +256,7 @@ main {
   font-family: sans-serif;
   font-weight: var(--fw-title);
   text-transform: uppercase;
-  font-size: calc(3rem + 18vw);
+  font-size: calc(3rem + 12vw);
   line-height: .8;
   text-align: center;
   margin: 0;
