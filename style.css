@@ -20,15 +20,18 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: .25rem;
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: var(--bg-primary);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: #ff7eee;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #df49a6;
 }
 
 main {
@@ -39,6 +42,7 @@ main {
   */
 }
 
+/* Navbari osa */
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
@@ -259,11 +263,14 @@ main {
 /*Teise põhikonteineri osa kus on toodete kastid*/
 
 .flex-grid {
-  /*CSS*/
+  
 }
 
 .flex-grid-ese {
   /*CSS*/
+  float:left; 
+  width: 50%; 
+  height: 400px;
 }
 
 #ese1 {
