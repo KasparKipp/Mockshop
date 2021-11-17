@@ -1,12 +1,15 @@
 :root {
   
   font-family: 'Open Sans';
+
+  --ff-logo: 'Comic sans';
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
   --transition-speed: 600ms;
   font-size: 16px;
+  --fw-title: bold;
 }
 
 body {
@@ -110,7 +113,7 @@ main {
   background: var(--bg-secondary);
   font-size: 1.5rem;
   letter-spacing: 0.3ch;
-  width: 100%;
+  width: 100vw;
 }
 
 .logo svg {
@@ -223,8 +226,9 @@ main {
 /*Esimese põhikonteineri osa*/
 .esimene-konteiner {
   display: flex;
-  align-content: center;
   justify-content: center;
+  align-items: center;
+  
   min-height: 100vh;
 
 
@@ -232,33 +236,35 @@ main {
 
 }
 
-#suurlinn {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-	
-  /* Tahame, et kataks igal ajal kogu ekraani */
-  min-width: 100%;
-  min-height: 100%;
-}
+
 
 .pilditekst {
-  background-image: url(https://picsum.photos/id/865/300/100);
+  background-image: url(https://unsplash.it/800);
   background-size: cover;
   background-clip: text;
-  /*color: transparent;*/
+  -webkit-background-clip: text;
+  color: transparent;
   
   /* Üldine stiliseering */
   font-family: sans-serif;
   font-weight: var(--fw-title);
   text-transform: uppercase;
-  font-size: calc(3rem + 7vw);
+  font-size: calc(3rem + 12vw);
   line-height: .8;
   text-align: center;
   margin: 0;
 }
 
+/*Esimese põhikonteineri osa lõpp*/
 /*Teise põhikonteineri osa kus on toodete kastid*/
+
+.flex-grid {
+  /*CSS*/
+}
+
+.flex-grid-ese {
+  /*CSS*/
+}
 
 #ese1 {
   background-image: url(https://picsum.photos/800/400);
@@ -272,3 +278,5 @@ main {
 #ese4 {
   background-image: url(https://picsum.photos/800/400);
 }
+
+/*Teise põhikonteineri lõpp*/
