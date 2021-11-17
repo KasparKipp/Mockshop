@@ -113,7 +113,7 @@ main {
   background: var(--bg-secondary);
   font-size: 1.5rem;
   letter-spacing: 0.3ch;
-  width: 100%;
+  width: 100vw;
 }
 
 .logo svg {
@@ -257,6 +257,14 @@ main {
 
 /*Esimese põhikonteineri osa lõpp*/
 /*Teise põhikonteineri osa kus on toodete kastid*/
+
+.flex-grid {
+  /*CSS*/
+}
+
+.flex-grid-ese {
+  /*CSS*/
+}
 
 #ese1 {
   background-image: url(https://picsum.photos/800/400);
