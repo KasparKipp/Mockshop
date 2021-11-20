@@ -12,9 +12,10 @@
 
 body {
   color: black;
-  background-color: white;
+  background-color: yellow;
   margin: 0;
   padding: 0;
+  height: 100%; /*küsitava väärtusega?*/
 }
 
 body::-webkit-scrollbar {
@@ -41,7 +42,7 @@ main {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .navbar-nav {
@@ -85,7 +86,7 @@ main {
 
 .nav-link svg {
   width: 2rem;
-  min-width: 2rem;
+  min-width: 1.5rem;
   margin: 0 1.5rem;
 }
 
@@ -284,3 +285,135 @@ main {
 }
 
 /*Teise põhikonteineri lõpp*/
+
+/*-- Footer --*/
+.footer {
+  background: var(--bg-primary);
+  color: var(--bg-primary);
+  height: 400px;
+  position: relative;
+  width: 100%;
+  min-height: 10%;
+}
+.footer .footer-content {
+  border: 1px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5rem;
+}
+.footer .footer-content .footer-section {
+  flex: 1;
+  border: 1px;
+}
+.footer .footer-bottom {
+  background: #0c0c0c;
+  color: #bdd9fd;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.footer-text {
+  font-family: "Open sans";
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  color: var(--text-primary);
+  width: 80%;
+  text-decoration: none;
+}
+.footer-pealkiri {
+  text-transform: uppercase;
+  text-align: justify;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 12pt;
+  letter-spacing: 0.4ch;
+  width: 100%;
+  display: flex;
+  margin-left: 2rem;
+}
+.footer-pealkiri-vr {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-align: justify;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.4ch;
+  width: 100%;
+}
+
+li a:visited {
+  color: rgb(233, 0, 144);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.footer-maps {
+  align-content: left;
+}
+
+/* -- footeri ikoonid -- */
+
+.flex-center {
+  width: 80%;
+  background: var(--bg-primary);
+  font-size: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -2rem;
+}
+
+.icon-3d {
+  padding: 30px;
+  -webkit-animation: icon-3d 200ms 10;
+  animation: icon3d 200ms 7;
+  color: var(--text-primary);
+}
+ul li a:hover. icon-3d {
+  -webkit-animation: icon-3d 200ms infinite;
+  animation: icon-3d 200ms infinite;
+}
+ul li a:hover .fa {
+  -webkit-animation: icon-3d 200ms infinite;
+  animation: icon-3d 200ms infinite;
+}
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px rgb(233, 0, 144), -5px -6px yellow;
+  }
+  25% {
+    text-shadow: -5px -6px rgb(233, 0, 144), 5px 4px yellow;
+  }
+  50% {
+    text-shadow: 5px -4px rgb(233, 0, 144), -8px 4px yellow;
+  }
+  75% {
+    text-shadow: -8px -4px rgb(233, 0, 144), -5px -4px yellow;
+  }
+  100% {
+    text-shadow: -5px 0 rgb(233, 0, 144), 5px -4px yellow;
+  }
+}
