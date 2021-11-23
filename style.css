@@ -8,6 +8,7 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
   font-size: 16px;
+  --fw-title: bold;
 }
 
 body {
@@ -22,11 +23,15 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: var(--bg-primary);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: #ff7eee;
+}
+
+body::-webkit-slider-thumb:hover {
+  background: #df49a6;
 }
 
 main {
@@ -234,34 +239,26 @@ main {
 /*Esimese põhikonteineri osa*/
 .esimene-konteiner {
   display: flex;
-  align-content: center;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
 
   background-image: url(https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80);
-}
-
-#suurlinn {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  /* Tahame, et kataks igal ajal kogu ekraani */
-  min-width: 100%;
-  min-height: 100%;
 }
 
 .pilditekst {
   background-image: url(https://picsum.photos/id/865/300/100);
   background-size: cover;
   background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   /*color: transparent;*/
 
   /* Üldine stiliseering */
   font-family: sans-serif;
   font-weight: var(--fw-title);
   text-transform: uppercase;
-  font-size: calc(3rem + 7vw);
+  font-size: calc(3rem + 12vw);
   line-height: 0.8;
   text-align: center;
   margin: 0;
@@ -269,6 +266,16 @@ main {
 
 /*Esimese põhikonteineri osa lõpp*/
 /*Teise põhikonteineri osa kus on toodete kastid*/
+
+.flex-grid {
+
+}
+
+.flex-grid-ese {
+  float: left;
+  width: 50%;
+  height: 400px;
+}
 
 #ese1 {
   background-image: url(https://picsum.photos/800/400);
