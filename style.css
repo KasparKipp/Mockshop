@@ -267,14 +267,43 @@ main {
 /*Esimese põhikonteineri osa lõpp*/
 /*Teise põhikonteineri osa kus on toodete kastid*/
 
-.flex-grid {
+* {
+  box-sizing: border-box;
+}
 
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .flex-grid-ese {
-  float: left;
-  width: 50%;
+  flex: 50%;
+  padding: 20px;
   height: 400px;
+  float: left;
+  width: calc((100vw - 84px) / 2);
+}
+
+.flex-grid-ese-tekst {
+  text-align: center;
+  line-height: 275px;
+  font-size:  calc((100vw - 84px) / 25);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-grid {
+    flex-direction: column;
+  }
+
+  .flex-grid-ese {
+    width: 100vw;
+  }
+
+  .flex-grid-ese-tekst {
+    font-size:  calc((100vw - 84px) / 10);
+  }
 }
 
 #ese1 {
