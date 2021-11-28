@@ -11,6 +11,10 @@
   --fw-title: bold;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: black;
   background-color: white;
@@ -172,6 +176,17 @@ main {
   main {
     margin: 0;
   }
+  .konteiner3{
+    margin-bottom: 5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .konteiner3-pilt{
+    width: 100%
+  }
+  .konteiner3-tekst{
+    width: 100%;
+  }
 }
 
 /* Large screens */
@@ -244,10 +259,13 @@ main {
   min-height: 100vh;
 
   background-image: url(https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+
 }
 
 .pilditekst {
-  background-image: url(https://picsum.photos/id/865/300/100);
+  background-image: url(https://picsum.photos/1600/800);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -267,10 +285,6 @@ main {
 /*Esimese põhikonteineri osa lõpp*/
 /*Teise põhikonteineri osa kus on toodete kastid*/
 
-* {
-  box-sizing: border-box;
-}
-
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
@@ -282,7 +296,10 @@ main {
   padding: 20px;
   height: 400px;
   float: left;
-  width: calc((100vw - 84px) / 2);
+  width: calc((100vw - 84px) / 2 - 5.5px);
+  
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
 }
 
 .flex-grid-ese-tekst {
@@ -320,3 +337,20 @@ main {
 }
 
 /*Teise põhikonteineri lõpp*/
+/*Kolmanda põhikonteineri algus*/
+.konteiner3{
+  display: flex;
+  float: left;
+  width: 100%;
+}
+.konteiner3-pilt{
+  width: 50%;
+  background-image: url(https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHZpcnR1YWwlMjByZWFsaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60);
+  min-height: 100vh;
+}
+.konteiner3-tekst{
+  width: 50%;
+  min-height: 100vh;
+}
+
+/*Kolmanda põhikonteineri lõpp*/
