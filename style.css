@@ -347,6 +347,7 @@ main {
   width: 50%;
   background-image: url(https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHZpcnR1YWwlMjByZWFsaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60);
   min-height: 100vh;
+  background-repeat: no-repeat;
 }
 .konteiner3-tekst{
   width: 50%;
