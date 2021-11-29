@@ -14,7 +14,9 @@
   
   --fw-title: bold;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -43,12 +45,16 @@ body::-webkit-slider-thumb:hover {
   background: var(--main-secondary);
 }
 
-main, .footer {
+main, footer {
   margin-left: 5rem;
 
   /* Võib proovida ka paddinguga hiljem?
   padding: 1rem;
   */
+}
+
+nav {
+  overflow: hidden;
 }
 
 .navbar {
@@ -90,7 +96,7 @@ main, .footer {
 .nav-link:hover {
   filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
-  color: var(--text-secondary);
+  color: var(--main-secondary);
 }
 
 .link-text {
@@ -179,11 +185,11 @@ main, .footer {
     justify-content: center;
   }
 
-  main, .footer {
+  main, footer {
     margin: 0;
   }
-  .footer {
-    margin-bottom: 5rem;
+  footer {
+    margin-bottom: 10rem;
   }
   .footer-bottom, .footer-maps{
     display: none;
