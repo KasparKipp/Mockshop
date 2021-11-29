@@ -188,6 +188,7 @@ main, footer {
   footer {
     margin-bottom: 10rem;
   }
+  
   .footer-bottom, .footer-maps{
     display: none;
   }
@@ -369,7 +370,7 @@ main, footer {
   color: var(--bg-primary);
   height: 400px;
   position: relative;
-  width: 100vw;
+  max-width: calc(100vw - 5.25rem);
   min-height: 10%;
 }
 .footer .footer-content {
@@ -385,7 +386,7 @@ main, footer {
 }
 .footer .footer-bottom {
   background: #0c0c0c;
-  color: #bdd9fd;
+  color: #fff;
   height: 30px;
   width: 100%;
   text-align: center;
@@ -426,19 +427,20 @@ main, footer {
 }
 
 li a:visited {
-  color: rgb(233, 0, 144);
+  color: var(--text-primary);
   background-color: transparent;
   text-decoration: none;
 }
 
 li a:hover {
-  color: yellow;
+  color: var(--main-secondary);
   background-color: transparent;
   text-decoration: underline;
 }
 
 .footer-maps {
   align-content: left;
+  margin-right: 2.5rem;
 }
 
 /* -- footeri ikoonid -- */
@@ -479,19 +481,19 @@ ul li a:hover .fa {
 
 @keyframes icon3d {
   0% {
-    text-shadow: 5px 4px rgb(233, 0, 144), -5px -6px yellow;
+    text-shadow: 5px 4px var(--main-secondary), -5px -6px yellow;
   }
   25% {
-    text-shadow: -5px -6px rgb(233, 0, 144), 5px 4px yellow;
+    text-shadow: -5px -6px var(--main-secondary), 5px 4px yellow;
   }
   50% {
-    text-shadow: 5px -4px rgb(233, 0, 144), -8px 4px yellow;
+    text-shadow: 5px -4px var(--main-secondary), -8px 4px yellow;
   }
   75% {
-    text-shadow: -8px -4px rgb(233, 0, 144), -5px -4px yellow;
+    text-shadow: -8px -4px var(--main-secondary), -5px -4px yellow;
   }
   100% {
-    text-shadow: -5px 0 rgb(233, 0, 144), 5px -4px yellow;
+    text-shadow: -5px 0 var(--main-secondary), 5px -4px yellow;
   }
 }
 
