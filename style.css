@@ -43,7 +43,7 @@ body::-webkit-slider-thumb:hover {
   background: var(--main-secondary);
 }
 
-main {
+main, .footer {
   margin-left: 5rem;
 
   /* Võib proovida ka paddinguga hiljem?
@@ -179,8 +179,14 @@ main {
     justify-content: center;
   }
 
-  main {
+  main, .footer {
     margin: 0;
+  }
+  .footer {
+    margin-bottom: 5rem;
+  }
+  .footer-bottom, .footer-maps{
+    display: none;
   }
   
 }
