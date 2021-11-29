@@ -27,6 +27,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%; /*küsitava väärtusega?*/
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -51,10 +52,6 @@ main, footer {
   /* Võib proovida ka paddinguga hiljem?
   padding: 1rem;
   */
-}
-
-nav {
-  overflow: hidden;
 }
 
 .navbar {
@@ -497,3 +494,5 @@ ul li a:hover .fa {
     text-shadow: -5px 0 rgb(233, 0, 144), 5px -4px yellow;
   }
 }
+
+/*Poe esemete jutt*/
