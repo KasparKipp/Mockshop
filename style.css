@@ -48,10 +48,14 @@ body::-webkit-slider-thumb:hover {
 
 main, footer {
   margin-left: 5rem;
-
+  
   /* Võib proovida ka paddinguga hiljem?
   padding: 1rem;
   */
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .navbar {
