@@ -1,13 +1,17 @@
 :root {
   font-family: "Open Sans";
+  font-size: 16px;
 
   --ff-logo: "Comic sans";
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
+  --main-primary: #ff7eee;
+  --main-secondary: #df49a6;
   --transition-speed: 600ms;
-  font-size: 16px;
+  
+  
   --fw-title: bold;
 }
 
@@ -32,11 +36,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #ff7eee;
+  background: var(--main-primary);
 }
 
 body::-webkit-slider-thumb:hover {
-  background: #df49a6;
+  background: var(--main-secondary);
 }
 
 main {
@@ -108,7 +112,7 @@ main {
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: #46f66c;
+  fill: var(--main-secondary);
 }
 
 .svg-icon circle {
@@ -244,11 +248,11 @@ main {
   display: block;
 }
 
-.light #lightIcon {
+.light #darkIcon {
   display: block;
 }
 
-.solar #solarIcon {
+.solar #darkIcon {
   display: block;
 }
 
@@ -278,9 +282,7 @@ main {
   font-weight: var(--fw-title);
   text-transform: uppercase;
   font-size: calc(3rem + 12vw);
-  line-height: 0.8;
   text-align: center;
-  margin: 0;
 }
 
 /*Esimese põhikonteineri osa lõpp*/
@@ -307,7 +309,13 @@ main {
   text-align: center;
   line-height: 275px;
   font-size:  calc((100vw - 84px) / 25);
-  color: white;
+  color: var(--main-primary);
+  padding: .0025em .075em;
+  border-radius: .25em;
+  background: var(--bg-primary);
+  opacity: .75;
+  color: var(--text-primary);
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 600px) {
@@ -325,16 +333,29 @@ main {
 }
 
 #ese1 {
-  background-image: url(https://picsum.photos/800/400);
+  background-image: url(https://i.hinnavaatlus.ee/p/520f/d0/f6/71urnvzowqlsl1500.jpg);
+  background-size: auto 100%;
+  background-position: center top;
+  background-color: #fff;
 }
 #ese2 {
-  background-image: url(https://picsum.photos/800/400);
+  background-image: url(https://media.gamestop.com/i/gamestop/10161037/The-Elder-Scrolls-V-Skyrim-VR?$pdp2x$$&fmt=webp);
+  background-size: auto calc(100% - 2rem);
+  background-position: center top 2rem;
+  background-color: #fff;
+  
 }
 #ese3 {
-  background-image: url(https://picsum.photos/800/400);
+  background-image: url(https://i.hinnavaatlus.ee/p/520f/8e/3f/4225493.jpg);
+  background-size: auto 100%;
+  background-position: center top;
+  background-color: #fff;
 }
 #ese4 {
-  background-image: url(https://picsum.photos/800/400);
+  background-image: url(data:image/jpeg;base64,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);
+  background-size: auto 100%;
+  background-position: center top;
+  background-color: #fff;
 }
 
 /*Teise põhikonteineri lõpp*/
