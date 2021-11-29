@@ -270,7 +270,7 @@ main {
 }
 
 .pilditekst {
-  background-image: url(https://picsum.photos/1600/800);
+  background-image: url(https://picsum.photos/1494/969);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -340,7 +340,7 @@ main {
 }
 #ese2 {
   background-image: url(https://media.gamestop.com/i/gamestop/10161037/The-Elder-Scrolls-V-Skyrim-VR?$pdp2x$$&fmt=webp);
-  background-size: auto calc(100% - 2rem);
+  background-size: auto calc(100% - 4rem);
   background-position: center top 2rem;
   background-color: #fff;
   
