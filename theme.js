@@ -1,9 +1,10 @@
+// teemade järjekord
 const themeMap = {
   dark: "light",
   light: "solar",
   solar: "dark"
 };
-
+// codepen.io kood
 const theme = localStorage.getItem('theme')
   || (tmp = Object.keys(themeMap)[0],
       localStorage.setItem('theme', tmp),
@@ -20,3 +21,4 @@ function toggleTheme() {
 }
 
 document.getElementById('themeButton').onclick = toggleTheme;
+//codepen.io koodi lõpp
