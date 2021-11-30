@@ -278,6 +278,7 @@ a:link {
 .pilditekst {
   background-image: url(https://picsum.photos/1494/969);
   background-size: cover;
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   /*color: transparent;*/
@@ -369,6 +370,7 @@ a:link {
 
 /*-- Footer --*/
 .footer {
+  background: var(--bg-primary);
   color: var(--bg-primary);
   height: 400px;
   position: relative;
@@ -441,6 +443,7 @@ li a:hover {
 }
 
 .footer-maps {
+  align-content: left;
   margin-right: 2.5rem;
 }
 
@@ -500,6 +503,6 @@ ul li a:hover .fa {
 
 /*Vigadeparandus, lisada õigesse kohta*/
 
-.jamad {
+.liinikõrgus-ul {
   line-height: 10px;
 }
