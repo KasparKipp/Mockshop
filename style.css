@@ -501,4 +501,8 @@ ul li a:hover .fa {
   }
 }
 
-/*Poe esemete jutt*/
+/*Vigadeparandus, lisada õigesse kohta*/
+
+.liinikõrgus-ul {
+  line-height: 10px;
+}
